@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category name"
+            android:id="@+id/item_r_category_name"
+            android:textSize="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/item_r_period"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00d 00h 00m"
+            android:id="@+id/item_r_period"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/item_r_add_photo"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_add_photo"
+            android:src="@mipmap/ic_add_a_photo_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:padding="10dp" />
+
+        <palladin.lab32.DatePickerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_start_date"
+            android:textSize="18dp"
+            android:layout_below="@+id/item_r_category_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp" />
+
+        <palladin.lab32.TimePickerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_start_time"
+            android:textSize="18dp"
+            android:layout_below="@+id/item_r_category_name"
+            android:layout_toRightOf="@+id/item_r_start_date"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_dash"
+            android:text="  -  "
+            android:textSize="18dp"
+            android:layout_below="@+id/item_r_category_name"
+            android:layout_toRightOf="@+id/item_r_start_time"
+            android:layout_marginTop="15dp" />
+
+        <palladin.lab32.DatePickerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_end_date"
+            android:textSize="18dp"
+            android:layout_below="@+id/item_r_category_name"
+            android:layout_toRightOf="@+id/item_r_dash"
+            android:layout_marginTop="15dp" />
+
+        <palladin.lab32.TimePickerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_end_time"
+            android:textSize="18dp"
+            android:layout_below="@+id/item_r_category_name"
+            android:layout_toRightOf="@+id/item_r_end_date"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp" />
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_add_description"
+            android:src="@mipmap/ic_mode_edit_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_r_end_time"
+            android:padding="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_show_photos"
+            android:src="@mipmap/ic_collections_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/item_r_start_date"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_r_description"
+            android:text="....."
+            android:textSize="18dp"
+            android:layout_below="@+id/item_r_start_date"
+            android:layout_toLeftOf="@+id/item_r_add_description"
+            android:layout_toRightOf="@+id/item_r_show_photos"
+            android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
